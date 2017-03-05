@@ -15,7 +15,7 @@ import android.view.WindowManager;
 import android.widget.TextView;
 
 import com.jzxiang.pickerview.config.PickerConfig;
-import com.jzxiang.pickerview.data.Type;
+import com.jzxiang.pickerview.data.DialogType;
 import com.jzxiang.pickerview.data.WheelCalendar;
 import com.jzxiang.pickerview.listener.OnDateSetListener;
 
@@ -140,7 +140,7 @@ public class TimePickerDialog extends DialogFragment implements View.OnClickList
             mPickerConfig = new PickerConfig();
         }
 
-        public Builder setType(Type type) {
+        public Builder setType(DialogType type) {
             mPickerConfig.mType = type;
             return this;
         }

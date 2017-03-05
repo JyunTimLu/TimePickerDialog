@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.jzxiang.pickerview.TimePickerDialog;
-import com.jzxiang.pickerview.data.Type;
+import com.jzxiang.pickerview.data.DialogType;
 import com.jzxiang.pickerview.listener.OnDateSetListener;
 
 import java.text.SimpleDateFormat;
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 .setMaxMillseconds(System.currentTimeMillis() + tenYears)
                 .setCurrentMillseconds(System.currentTimeMillis())
                 .setThemeColor(getResources().getColor(R.color.timepicker_dialog_bg))
-                .setType(Type.ALL)
+                .setType(DialogType.ALL)
                 .setWheelItemTextNormalColor(getResources().getColor(R.color.timetimepicker_default_text_color))
                 .setWheelItemTextSelectorColor(getResources().getColor(R.color.timepicker_toolbar_bg))
                 .setWheelItemTextSize(12)
@@ -56,20 +56,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //                .setCallBack(this)
 //                .build();
         mDialogYearMonth = new TimePickerDialog.Builder()
-                .setType(Type.YEAR_MONTH)
+                .setType(DialogType.YEAR_MONTH)
                 .setThemeColor(getResources().getColor(R.color.colorPrimary))
                 .setCallBack(this)
                 .build();
         mDialogYearMonthDay = new TimePickerDialog.Builder()
-                .setType(Type.YEAR_MONTH_DAY)
+                .setType(DialogType.YEAR_MONTH_DAY)
                 .setCallBack(this)
                 .build();
         mDialogMonthDayHourMinute = new TimePickerDialog.Builder()
-                .setType(Type.MONTH_DAY_HOUR_MIN)
+                .setType(DialogType.MONTH_DAY_HOUR_MIN)
                 .setCallBack(this)
                 .build();
         mDialogHourMinute = new TimePickerDialog.Builder()
-                .setType(Type.HOURS_MINS)
+                .setType(DialogType.HOURS_MINS)
                 .setCallBack(this)
                 .build();
     }

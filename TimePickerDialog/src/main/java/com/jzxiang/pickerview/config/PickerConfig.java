@@ -1,6 +1,6 @@
 package com.jzxiang.pickerview.config;
 
-import com.jzxiang.pickerview.data.Type;
+import com.jzxiang.pickerview.data.DialogType;
 import com.jzxiang.pickerview.data.WheelCalendar;
 import com.jzxiang.pickerview.listener.OnDateSetListener;
 
@@ -10,7 +10,7 @@ import com.jzxiang.pickerview.listener.OnDateSetListener;
  */
 public class PickerConfig {
 
-    public Type mType = DefaultConfig.TYPE;
+    public DialogType mType = DefaultConfig.TYPE;
     public int mThemeColor = DefaultConfig.COLOR;
 
     public String mCancelString = DefaultConfig.CANCEL;
