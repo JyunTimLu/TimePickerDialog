@@ -7,7 +7,7 @@ import com.jzxiang.pickerview.data.DialogType;
  */
 public class DefaultConfig {
     public static final DialogType TYPE = DialogType.ALL;
-    public static final int COLOR = 0xFF0097a7;
+    public static final int COLOR = 0xFFe27347;
     public static final int TOOLBAR_TV_COLOR = 0xFFFFFFFF;
     public static final int TV_NORMAL_COLOR = 0xFF999999;
     public static final int TV_SELECTOR_COLOR = 0XFF404040;
